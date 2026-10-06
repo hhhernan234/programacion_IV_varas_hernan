@@ -43,16 +43,22 @@ bun-debug.log*
 
 --- NODE.JS & GENERAL JS/TS ---
 
-Dependencies (covers root and subdirectories)
+Dependencies (recursively covers root and subdirectories)
 
+node_modules/
 /node_modules/
+jspm_packages/
 /jspm_packages/
 
 Build and distribution outputs
 
+dist/
 /dist/
+build/
 /build/
+out/
 /out/
+lib/
 /lib/
 *.tsbuildinfo
 .npm
@@ -68,21 +74,13 @@ Environment variables & secrets
 
 Testing and coverage
 
+coverage/
 /coverage/
 .nyc_output/
 
-Package manager lockfiles (uncomment if you want to ignore lockfiles, though usually they are tracked)
-
-package-lock.json
-
-yarn.lock
-
-pnpm-lock.yaml
-
 --- NESTJS SPECIFIC ---
 
-/dist/
-/tsconfig.build.tsbuildinfo
+tsconfig.build.tsbuildinfo
 
 --- REACT NATIVE SPECIFIC ---
 
@@ -90,30 +88,30 @@ pnpm-lock.yaml
 .expo/
 .expo-shared/
 .metro-health-check
+android/app/build/
 /android/app/build/
+ios/Pods/
 /ios/Pods/
+ios/build/
 /ios/build/
-/ios/.xcworkspace
-/ios/*.xcodeproj/xcuserdata/
-/ios/.xcode.env.local
+ios/.xcworkspace
+ios/*.xcodeproj/xcuserdata/
+ios/.xcode.env.local
 
 --- KOTLIN / ANDROID / GRADLE ---
 
-Gradle
-
-/.gradle/
+.gradle/
 /gradle-app.setting
-/gradlew
-/gradlew.bat
+gradlew
+gradlew.bat
 /gradle/wrapper/gradle-wrapper.jar
 !/gradle/wrapper/gradle-wrapper.jar
 
 Android build outputs
 
-/build/
-/captures/
-/.navigation/
-/.cxx/
+captures/
+.navigation/
+.cxx/
 *.apk
 *.aar
 *.apks
@@ -123,20 +121,18 @@ Android build outputs
 
 Local configuration
 
-/local.properties
-/keystores/.jks
-/keystores/.keystore
+local.properties
+keystores/.jks
+keystores/.keystore
 
 --- DART / FLUTTER ---
 
-Flutter/Dart build outputs
-
-/.dart_tool/
-/.flutter-plugins
-/.flutter-plugins-dependencies
-/.pub-cache/
-/.pub/
-/build/
+.dart_tool/
+/ .dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
 .packages
 
 Flutter specific generated files
@@ -144,11 +140,10 @@ Flutter specific generated files
 *.g.dart
 *.freezed.dart
 *.gr.dart
-/ios/Flutter/App.framework
-/ios/Flutter/Flutter.framework
-/ios/Flutter/Flutter.podspec
-/ios/Flutter/Generated.xcconfig
-/ios/Pods/
+ios/Flutter/App.framework
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+ios/Flutter/Generated.xcconfig
 
 Dart code analysis
 
@@ -159,9 +154,9 @@ Dart code analysis
 
 *.tmp
 *.temp
-/.cache/
-/.parcel-cache/
-/.turbo/
-/.next/
-/.nuxt/
-/.output/
+.cache/
+.parcel-cache/
+.turbo/
+.next/
+.nuxt/
+.output/
