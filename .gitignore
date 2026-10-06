@@ -1,0 +1,167 @@
+==========================================
+
+MULTI-PROJECT .GITIGNORE
+
+Covers: Node.js, NestJS, React Native, Kotlin, Dart/Flutter
+
+==========================================
+
+--- GENERAL & OPERATING SYSTEM FILES ---
+
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+--- EDITORS & IDEs ---
+
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/
+*.sublime-project
+*.sublime-workspace
+.project
+.classpath
+.settings/
+
+--- LOGS & DIAGNOSTICS ---
+
+.log
+npm-debug.log
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+bun-debug.log*
+
+--- NODE.JS & GENERAL JS/TS ---
+
+Dependencies (covers root and subdirectories)
+
+/node_modules/
+/jspm_packages/
+
+Build and distribution outputs
+
+/dist/
+/build/
+/out/
+/lib/
+*.tsbuildinfo
+.npm
+.eslintcache
+.stylelintcache
+
+Environment variables & secrets
+
+.env
+.env
+.env.
+!.env.example
+
+Testing and coverage
+
+/coverage/
+.nyc_output/
+
+Package manager lockfiles (uncomment if you want to ignore lockfiles, though usually they are tracked)
+
+package-lock.json
+
+yarn.lock
+
+pnpm-lock.yaml
+
+--- NESTJS SPECIFIC ---
+
+/dist/
+/tsconfig.build.tsbuildinfo
+
+--- REACT NATIVE SPECIFIC ---
+
+.expo/
+.expo/
+.expo-shared/
+.metro-health-check
+/android/app/build/
+/ios/Pods/
+/ios/build/
+/ios/.xcworkspace
+/ios/*.xcodeproj/xcuserdata/
+/ios/.xcode.env.local
+
+--- KOTLIN / ANDROID / GRADLE ---
+
+Gradle
+
+/.gradle/
+/gradle-app.setting
+/gradlew
+/gradlew.bat
+/gradle/wrapper/gradle-wrapper.jar
+!/gradle/wrapper/gradle-wrapper.jar
+
+Android build outputs
+
+/build/
+/captures/
+/.navigation/
+/.cxx/
+*.apk
+*.aar
+*.apks
+*.apms
+*.dex
+*.class
+
+Local configuration
+
+/local.properties
+/keystores/.jks
+/keystores/.keystore
+
+--- DART / FLUTTER ---
+
+Flutter/Dart build outputs
+
+/.dart_tool/
+/.flutter-plugins
+/.flutter-plugins-dependencies
+/.pub-cache/
+/.pub/
+/build/
+.packages
+
+Flutter specific generated files
+
+*.g.dart
+*.freezed.dart
+*.gr.dart
+/ios/Flutter/App.framework
+/ios/Flutter/Flutter.framework
+/ios/Flutter/Flutter.podspec
+/ios/Flutter/Generated.xcconfig
+/ios/Pods/
+
+Dart code analysis
+
+.analyser
+.analysis_options
+
+--- MISCELLANEOUS / CACHES ---
+
+*.tmp
+*.temp
+/.cache/
+/.parcel-cache/
+/.turbo/
+/.next/
+/.nuxt/
+/.output/
