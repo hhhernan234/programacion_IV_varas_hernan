@@ -1,13 +1,14 @@
+
 abstract class Boxeador {
-    abstract atacar():void;
-    decansar() :void{
+    abstract atacar(): void;
+    descansar(): void {
         console.log("El boxeador recupera energia");
     }
-}   
+}
 
-class Rocky extends Boxeador{
-    atacar():void{
-        console.log("Rocky lanza con velocidad")
+class Rocky extends Boxeador {
+    atacar(): void {
+        console.log("Rocky lanza con velocidad");
     }
 }
 
@@ -17,24 +18,25 @@ class Apollo extends Boxeador {
     }
 }
 
-const boxeadores: Boxeador []=[
+const boxeadores: Boxeador[] = [
     new Rocky(),
     new Apollo(),
-]
+];
 
 console.log(boxeadores);
 boxeadores.forEach(boxeador => boxeador.atacar());
 
 abstract class Saiyajin {
-    abstract transformarse():void;
-    detectarKi() :void{
+    abstract transformarse(): void;
+    detectarKi(): void {
         console.log("Detectando el nivel de energia del enemigo");
     }
-}   
+}
 
-class Goku extends Saiyajin{
-    detectarKi():void{
-        console.log("Goku se transforma en Super Saiyajin Blue")
+class Goku extends Saiyajin {
+    // Corregido: Goku debe implementar el método abstracto transformarse()
+    transformarse(): void {
+        console.log("Goku se transforma en Super Saiyajin Blue");
     }
 }
 
@@ -44,10 +46,11 @@ class Vegeta extends Saiyajin {
     }
 }
 
-const saiyajines: Saiyajin []=[
+const saiyajines: Saiyajin[] = [
     new Goku(),
     new Vegeta(),
-]
+];
 
 console.log(saiyajines);
 saiyajines.forEach(saiyajin => saiyajin.transformarse());
+saiyajines.forEach(saiyajin => saiyajin.detectarKi());
