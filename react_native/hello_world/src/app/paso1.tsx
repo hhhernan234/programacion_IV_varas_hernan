@@ -1,7 +1,7 @@
 // app/index.tsx — reemplaza la función Paso1
 import { StyleSheet, Text, View } from 'react-native'
 
-function Paso1() {
+export function Paso1() {
   return (
     <View style={styles.contenedor}>
       <Text style={styles.titulo}>Sistema de Monitoreo</Text>
