@@ -10,6 +10,8 @@ import Paso6 from './paso6'
 import Paso7 from './paso7'
 import { Paso8 } from './paso8'
 import { Paso9, TarjetaServidor } from './paso8TarjetaServidor'
+import { Paso9_mp } from './paso8TarjetaServidor_mp_varas_hernan'
+import Paso7_mp from './paso7_mp_varas_hernan'
 
 // ┌──────────────────────────────────────────────────────────────────┐
 // │  Cambia este número y guarda (Ctrl+S) para navegar entre pasos. │
@@ -19,7 +21,7 @@ import { Paso9, TarjetaServidor } from './paso8TarjetaServidor'
 // │  33  Paso 3  Sumar evidencias (useRef)                          │
 // │  4   Paso 4  Hooks nativos de RN — dimensiones, esquema de color│
 // └──────────────────────────────────────────────────────────────────┘
-const PASO: number = 9
+const PASO: number = 7
 
 export default function Index() {
   switch (PASO) {
@@ -38,7 +40,7 @@ export default function Index() {
     case 6:
       return <Paso6 />  
     case 7:
-      return <Paso7 />  
+      return <Paso7_mp />  
     case 8:
       return <Paso8 />    
     case 9:

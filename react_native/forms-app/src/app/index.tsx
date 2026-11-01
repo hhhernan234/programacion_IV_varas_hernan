@@ -5,6 +5,7 @@ import { Paso3 } from '@/components/paso3'
 import { Paso4 } from '@/components/paso4'
 import { Paso4Volumen } from '@/components/paso4Volumen'
 import { Paso5Volumen } from '@/components/paso5Volumen'
+import { Paso6_mp } from '@/components/paso6_mp_varas_hernan'
 import { StyleSheet, Text, View } from 'react-native'
 
 // ┌──────────────────────────────────────────────────────────────────────┐
@@ -16,7 +17,7 @@ import { StyleSheet, Text, View } from 'react-native'
 // │  5  Formulario con validación — calcular volumen                    │
 // │  6  KeyboardAvoidingView — formulario sin tapado de teclado         │
 // └──────────────────────────────────────────────────────────────────────┘
-const PASO: number = 5
+const PASO: number = 7
 
 export default function Index() {
   switch (PASO) {
@@ -30,6 +31,10 @@ export default function Index() {
       return <Paso4Volumen />         
     case 5:
       return <Paso5Volumen />  
+    case 6:
+      return <Paso6 />
+    case 7:
+      return <Paso6_mp />  
   
     default:
       return (

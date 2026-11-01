@@ -5,6 +5,7 @@ import { Paso3 } from '@/components/paso3'
 import { Paso4 } from '@/components/paso4'
 import { Paso5 } from '@/components/paso5'
 import { Paso6 } from '@/components/paso6'
+import { Paso6_mp } from '@/components/paso6_mp_varas_hernan'
 import { StyleSheet, Text, View } from 'react-native'
 
 // ┌──────────────────────────────────────────────────────────────────┐
@@ -17,7 +18,7 @@ import { StyleSheet, Text, View } from 'react-native'
 // │  6  Paso 6  SafeAreaView y useSafeAreaInsets                    │
 // │  7  Paso 7  Dashboard responsivo combinado                      │
 // └──────────────────────────────────────────────────────────────────┘
-const PASO = 6
+const PASO = 7
 
 export default function Index() {
   switch (PASO) {
@@ -32,7 +33,9 @@ export default function Index() {
     case 5:
       return <Paso5 />  
     case 6:
-      return <Paso6 />    
+      return <Paso6 />  
+    case 7:
+      return <Paso6_mp />    
     default:
       return (
         <View style={estilos.centrado}>
